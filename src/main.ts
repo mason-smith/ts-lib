@@ -1,11 +1,8 @@
-export const g = (n: number) => n + 1;
-
-export const f = (n: number) => n * 2;
+import { addOne } from './common/add-one';
+import { double } from './common/double';
 
 export const doStuff = (x: number) => {
-  const afterG = g(x);
-
-  const afterF = f(afterG);
-
+  const afterG = addOne(x);
+  const afterF = double(afterG);
   return afterF;
 };
