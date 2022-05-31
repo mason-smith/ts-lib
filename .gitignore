@@ -1,0 +1,14 @@
+node_modules
+
+# testing 
+coverage
+cypress/videos
+cypress/screenshots
+
+# build
+dist
+dist-ssr
+
+# etc
+*.local
+.DS_Store
