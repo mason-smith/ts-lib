@@ -10,5 +10,6 @@ dist
 dist-ssr
 
 # etc
+.eslintcache
 *.local
 .DS_Store
