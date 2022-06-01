@@ -15,6 +15,10 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./"
+  },
   "plugins": ["@typescript-eslint"],
   "rules": {
     "unused-imports/no-unused-imports-ts": 0,
@@ -38,24 +42,19 @@
     "no-underscore-dangle": 0,
     "no-use-before-define": 0,
     "import/no-cycle": 0,
-    "import/no-useless-path-segments": 0, // Allows us to import as './' instead of '.'
+    "import/no-useless-path-segments": 0, // Allows us to import as "./" instead of "."
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
+    "import/extensions": 0
   },
   "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "import/resolver": {
+      "typescript": {},
       "node": {
-        "paths": ["src"],
+        "paths": ["~"],
         "extensions": [".js", ".jsx", ".ts", ".tsx"],
         "moduleDirectory": ["node_modules", "."]
       }
