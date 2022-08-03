@@ -3,7 +3,7 @@ import { test, describe, expect } from 'vitest';
 import { breakCamelCase } from './break-camel-case';
 
 describe('breakCamelCase', () => {
-  test('should return whether or not a given value is higher than the average in a given array', () => {
+  test('should space out camel cased words', () => {
     expect(breakCamelCase('camelCasing')).toEqual('camel Casing');
     expect(breakCamelCase('camelCasingTest')).toEqual('camel Casing Test');
     expect(breakCamelCase('identifier')).toEqual('identifier');

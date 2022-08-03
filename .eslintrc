@@ -25,21 +25,21 @@
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-unused-vars": 0,
-    "max-len": [
-      "warn",
-      {
-        "code": 120,
-        "comment": 120,
-        "tabWidth": 2,
-        "comments": 80,
-        "ignoreComments": false,
-        "ignoreTrailingComments": true,
-        "ignoreUrls": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreRegExpLiterals": true
-      }
-    ],
+    // "max-len": [
+    //   "warn",
+    //   {
+    //     "code": 120,
+    //     "comment": 120,
+    //     "tabWidth": 2,
+    //     "comments": 80,
+    //     "ignoreComments": false,
+    //     "ignoreTrailingComments": true,
+    //     "ignoreUrls": true,
+    //     "ignoreStrings": true,
+    //     "ignoreTemplateLiterals": true,
+    //     "ignoreRegExpLiterals": true
+    //   }
+    // ],
     "no-underscore-dangle": 0,
     "no-use-before-define": 0,
     "import/no-cycle": 0,
