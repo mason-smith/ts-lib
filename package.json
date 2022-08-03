@@ -11,14 +11,14 @@
     "dev": "npm run build -- --watch",
     "test:unit": "vitest run",
     "test:watch": "vitest --watch",
-    "test:coverage": "vitest --coverage",
+    "test:coverage": "vitest run --coverage",
     "test:cov-open": "npm run test:cov && open coverage/lcov-report/index.html",
     "lint": "eslint --cache --fix",
     "check-types": "tsc",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|json|css|scss)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
-    "validate": "npm-run-all check-types format check-format lint test:unit build",
+    "validate": "npm-run-all check-types format check-format lint test:coverage build",
     "prepare": "husky install"
   },
   "devDependencies": {
