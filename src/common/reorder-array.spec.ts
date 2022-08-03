@@ -1,6 +1,6 @@
 import { test, describe, expect } from 'vitest';
 
-import { reorderArray } from './reorderArray';
+import { reorderArray } from './reorder-array';
 import { columns } from './__mocks__/columns';
 import { reorderedColumns } from './__mocks__/reorderedColumns';
 

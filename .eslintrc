@@ -29,6 +29,7 @@
       "warn",
       {
         "code": 120,
+        "comment": 120,
         "tabWidth": 2,
         "comments": 80,
         "ignoreComments": false,
